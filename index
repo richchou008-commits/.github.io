@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周easy - 輕鬆學程式</title>
+    <style>
+        :root {
+            --primary-yellow: #FFD93D;
+            --secondary-blue: #6BCB77;
+            --accent-blue: #4D96FF;
+            --bg-color: #F9F9F9;
+            --text-dark: #2B2B2B;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Microsoft JhengHei";
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--primary-yellow);
+            width: 100%;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #FF6B6B;
+            text-shadow: 2px 2px 0px white;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            width: 90%;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        .nav-card {
+            background: white;
+            text-decoration: none;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--text-dark);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            border: 3px solid transparent;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+            border-color: var(--primary-yellow);
+        }
+
+        /* 不同的色塊裝飾 */
+        .c-lang { border-bottom: 8px solid #A8B9CC; }
+        .cpp-lang { border-bottom: 8px solid #00599C; }
+        .py-lang { border-bottom: 8px solid #3776AB; }
+        .go-lang { border-bottom: 8px solid #00ADD8; }
+
+        footer {
+            margin-top: auto;
+            padding: 30px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>周easy 🚀</h1>
+        <p class="subtitle">寫程式沒那麼難，我們輕鬆點學！</p>
+    </header>
+
+    <div class="container">
+        <a href="#c" class="nav-card c-lang">C 語言</a>
+        <a href="#cpp" class="nav-card cpp-lang">C++ 進階</a>
+        <a href="#python" class="nav-card py-lang">Python 腳本</a>
+        <a href="#go" class="nav-card go-lang">Go 併發</a>
+    </div>
+
+    <footer>
+        &copy; 2026 周easy 教學網頁 - 讓學習變簡單
+    </footer>
+
+</body>
+</html>
